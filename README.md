@@ -2,7 +2,7 @@
 ## Descripción del Proyecto
 Este proyecto consiste en cuatro ejercicios diseñados para evaluar conocimientos en bases de datos, programación y buenas prácticas. Los ejercicios están desarrollados utilizando las tecnologías PHP, MySQL y JavaScript.
 
-Tecnologías Utilizadas
+## Tecnologías Utilizadas
 - PHP
 - MySQL
 - JavaScript
@@ -40,3 +40,7 @@ Ejecute el comando: node index.js.`
 
 ### EJERCICIO 4
 Acceda a la URL http://localhost/ejercicio4 para observar el flujo de ejecución del ejercicio 4 en un caso de prueba.
+### DIAGRAMA DE CLASES PARA LA RESOLUCIÓN DEL EJERCICIO 4
+[Diagrama de clases](https://lucid.app/lucidchart/ae22ba48-9749-41e4-806c-4ed84b91db9a/edit?viewport_loc=-366%2C103%2C3523%2C1790%2C0_0&invitationId=inv_d36b59b5-c5da-43d9-bef4-8dab503c8bb4)
+
+
