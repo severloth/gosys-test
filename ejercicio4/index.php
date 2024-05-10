@@ -14,9 +14,9 @@ echo "<h1> Test de flujo del sistema de envíos Flash</h1>";
 $modeloCamion = new Modelo("Modelo1", 10, 1000); 
 $camion = new Camion($modeloCamion, "ABC123");
 
-echo "Modelo del camión: " . $camion->getModelo()->getNombreModelo() . PHP_EOL;
+echo "Modelo del camión: " . $camion->getModelo()->getNombreModelo();
 echo "<br>";
-echo "Patente del camión: " . $camion->getPatente() . PHP_EOL;
+echo "Patente del camión: " . $camion->getPatente();
 
 echo "<br>";
 echo "<br>";
@@ -27,16 +27,16 @@ echo "<br>";
 $paquete1 = new Paquete(10, 1, 1, 1);
 $paquete2 = new Paquete(20, 1, 1, 1);
 
-echo "Peso del paquete 1: " . $paquete1->getPeso() . " kg" . PHP_EOL;
+echo "Peso del paquete 1: " . $paquete1->getPeso() . " kg";
 echo "<br>";
-echo "Volumen del paquete 1: " . $paquete1->getAlto() * $paquete1->getAncho() * $paquete1->getLargo() . " m3" . PHP_EOL;
+echo "Volumen del paquete 1: " . $paquete1->getAlto() * $paquete1->getAncho() * $paquete1->getLargo() . " m3";
 
 echo "<br>";
 echo "<br>";
 
-echo "Peso del paquete 2: " . $paquete2->getPeso() . " kg" . PHP_EOL;
+echo "Peso del paquete 2: " . $paquete2->getPeso() . " kg";
 echo "<br>";
-echo "Volumen del paquete 2: " . $paquete2->getAlto() * $paquete2->getAncho() * $paquete2->getLargo() . " m3" . PHP_EOL;
+echo "Volumen del paquete 2: " . $paquete2->getAlto() * $paquete2->getAncho() * $paquete2->getLargo() . " m3";
 
 echo "<br>";
 echo "<br>";
@@ -47,26 +47,33 @@ $direccionDestino = new Direccion("Calle2", 1200, 1665, "Argentina", "Buenos Air
 
 $viajeNormal = new ViajeNormal([$paquete1, $paquete2], $direccionOrigen, $direccionDestino);
 $viajePrioritario = new ViajePrioritario([$paquete1, $paquete2], $direccionOrigen, $direccionDestino);
+$viajeDevolucion = new ViajeDevolucion([$paquete1, $paquete2], $direccionOrigen, $direccionDestino);
 
 $costoViajeNormal = $viajeNormal->calcularCosto();
 $costoViajePrioritario = $viajePrioritario->calcularCosto();
+$costoViajeDevolucion = $viajeDevolucion->calcularCosto();
 
 echo "<br>";
-echo "Costo del viaje normal: $" . $costoViajeNormal . PHP_EOL;
+echo "Costo del viaje normal: $" . $costoViajeNormal;
 echo "<br>";
-echo "Costo del viaje prioritario: $" .$costoViajePrioritario . PHP_EOL;
+echo "Costo del viaje prioritario: $" .$costoViajePrioritario;
+echo "<br>";
+echo "Costo del viaje devolución: $".$costoViajeDevolucion;
 
 $hojaDeRuta = new HojaDeRuta();
 $hojaDeRuta->agregarViaje($viajeNormal);
 $hojaDeRuta->agregarViaje($viajePrioritario);
+$hojaDeRuta->agregarViaje($viajeDevolucion);
+echo "<br>";
 
 try {
     $camion->cargarHojaDeRuta($hojaDeRuta);
-    echo "La hoja de ruta se cargó exitosamente en el camión." . PHP_EOL;
+    echo " La hoja de ruta se cargó exitosamente en el camión. ";
+
     $costoTotalHojaDeRuta = $hojaDeRuta->calcularCostoTotal();
 
-    echo "Costo total de la hoja de ruta: $" . $costoTotalHojaDeRuta . PHP_EOL;
+    echo "Costo total de la hoja de ruta: $" . $costoTotalHojaDeRuta;
 } catch (Exception $e) {
-    echo "Error: " . $e->getMessage() . PHP_EOL;
+    echo "Error: " . $e->getMessage();
 }
 
