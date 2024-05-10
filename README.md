@@ -18,10 +18,13 @@ Se implementa documentación PHPDOC en casos pertinentes, excluyendo getters, se
 ## Instalación
 Para visualizar los ejercicios que tienen alguna parte de navegador deberá seguir estos pasos:
 
-`Instale y active Apache en XAMPP.
-Navegue hasta la carpeta htdocs de XAMPP.
-Clone el repositorio del proyecto con el comando: git clone https://github.com/severloth/gosys-test.git
-Acceda a la carpeta recién clonada con el comando: cd gosys-test`
+`Instale y active Apache en XAMPP.`
+
+`Navegue hasta la carpeta htdocs de XAMPP.`
+
+`Clone el repositorio del proyecto con el comando: git clone https://github.com/severloth/gosys-test.git`
+
+`Acceda a la carpeta recién clonada con el comando: cd gosys-test`
 
 ## Ejecución de los Ejercicios
 ### EJERCICIO 1
