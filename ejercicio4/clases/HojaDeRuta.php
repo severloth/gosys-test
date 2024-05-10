@@ -20,26 +20,7 @@ class HojaDeRuta
         $this->setHojasDeRuta($hojasDeRuta);
     }
 
-    /**
-     * Agrega un viaje a la hoja de ruta.
-     *
-     * @param Viaje $viaje El viaje a agregar.
-     */
-    public function agregarViaje(Viaje $viaje): void
-    {
-        $this->viajes[] = $viaje;
-    }
-
-    /**
-     * Agrega una hoja de ruta asociada.
-     *
-     * @param HojaDeRuta $hojaDeRuta La hoja de ruta a agregar.
-     */
-    public function agregarHojasDeRuta(HojaDeRuta $hojaDeRuta): void
-    {
-        $this->hojasDeRuta[] = $hojaDeRuta;
-    }
-
+ 
     public function getViajes(): array
     {
         return $this->viajes;
@@ -72,7 +53,7 @@ class HojaDeRuta
     {
         foreach ($viajes as $viaje) {
             if (!$viaje instanceof Viaje) {
-                throw new InvalidArgumentException("¡Che! El array de viajes solo puede contener objetos de tipo Viaje.");
+                throw new InvalidArgumentException("El array de viajes solo puede contener objetos de tipo Viaje.");
             }
         }
         $this->viajes = $viajes;
@@ -86,7 +67,7 @@ class HojaDeRuta
     {
         foreach ($hojasDeRuta as $hojaDeRuta) {
             if (!$hojaDeRuta instanceof HojaDeRuta) {
-                throw new InvalidArgumentException("¡Che! El array de hojas de ruta solo puede contener objetos de tipo HojaDeRuta.");
+                throw new InvalidArgumentException("El array de hojas de ruta solo puede contener objetos de tipo HojaDeRuta.");
             }
         }
         $this->hojasDeRuta = $hojasDeRuta;

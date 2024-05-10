@@ -60,10 +60,8 @@ echo "Costo del viaje prioritario: $" .$costoViajePrioritario;
 echo "<br>";
 echo "Costo del viaje devolución: $".$costoViajeDevolucion;
 
-$hojaDeRuta = new HojaDeRuta();
-$hojaDeRuta->agregarViaje($viajeNormal);
-$hojaDeRuta->agregarViaje($viajePrioritario);
-$hojaDeRuta->agregarViaje($viajeDevolucion);
+$hojaDeRuta = new HojaDeRuta([$viajeNormal, $viajePrioritario, $viajeDevolucion]);
+
 echo "<br>";
 
 try {

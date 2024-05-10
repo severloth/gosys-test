@@ -36,7 +36,7 @@ class Camion
             $volumenTotal += $viaje->volumenTotal();
         }
 
-        $mensajeExcepcion = "¡La carga supera las capacidades del camión, che!";
+        $mensajeExcepcion = "¡La carga supera las capacidades del camión";
         $mensajeExcepcion .= " Peso total: $pesoTotal kg, Volumen total: $volumenTotal m3.";
         $mensajeExcepcion .= " Capacidad: Peso máximo: {$this->modelo->getPesoMax()} kg, Volumen máximo: {$this->modelo->getVolumenM3()} m3.";
 

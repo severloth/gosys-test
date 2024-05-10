@@ -29,7 +29,7 @@ abstract class Viaje
     {
         foreach ($paquetes as $paquete) {
             if (!$paquete instanceof Paquete) {
-                throw new InvalidArgumentException("¡Che! El array de paquetes solo puede contener objetos de tipo Paquete.");
+                throw new InvalidArgumentException("El array de paquetes solo puede contener objetos de tipo Paquete.");
             }
         }
 
