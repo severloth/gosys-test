@@ -31,7 +31,7 @@ Para visualizar los ejercicios que tienen alguna parte de navegador deberá segu
 La visualización del ejercicio 1 solo es posible a través del enlace al IDE en línea, donde se puede ejecutar el script SQL.
 
 ### EJERCICIO 2
-Acceda a la URL http://localhost/ejercicio2 y pruebe cambiando el parámetro de la función `buscarDestinos($destinos, "stringABuscar")`.
+Acceda a la URL http://localhost/gosys-test/ejercicio2 y pruebe cambiando el parámetro de la función `buscarDestinos($destinos, "stringABuscar")`.
 
 ### EJERCICIO 3
 `Instale Node.js.
@@ -39,7 +39,7 @@ Acceda a la carpeta del ejercicio 3.
 Ejecute el comando: node index.js.`
 
 ### EJERCICIO 4
-Acceda a la URL http://localhost/ejercicio4 para observar el flujo de ejecución del ejercicio 4 en un caso de prueba.
+Acceda a la URL http://localhost/gosys-test/ejercicio4 para observar el flujo de ejecución del ejercicio 4 en un caso de prueba.
 ### DIAGRAMA DE CLASES PARA LA RESOLUCIÓN DEL EJERCICIO 4
 [Diagrama de clases](https://lucid.app/lucidchart/ae22ba48-9749-41e4-806c-4ed84b91db9a/edit?viewport_loc=-366%2C103%2C3523%2C1790%2C0_0&invitationId=inv_d36b59b5-c5da-43d9-bef4-8dab503c8bb4)
 
